@@ -1,4 +1,3 @@
-readme_content = """# My-K-Means
 
 **K-Means Clustering - Iris Dataset**
 
