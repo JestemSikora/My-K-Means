@@ -20,15 +20,18 @@ Ten projekt przedstawia od podstaw własną implementację algorytmu K-Means w P
 
 ## Instalacja
 ```bash
-pip install numpy pandas scikit-learn```
+pip install numpy pandas scikit-learn
+```
 
 ## Uruchomienie:
 1. Zainstaluj wymagane biblioteki:
 ```bash
-   pip install numpy pandas scikit-learn```
+   pip install numpy pandas scikit-learn
+```
 2. Uruchom plik main.py:
 ```bash
-   python main.py```
+   python main.py
+```
 
 Opis działania:
 - Dane Iris są ładowane z sklearn.datasets.
