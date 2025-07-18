@@ -35,3 +35,7 @@ Opis działania:
 - Algorytm K Means dzieli dane na 3 klastry.
 - Wyniki klastrów są dostępne w atrybucie model_1.k.
 
+
+
+
+
