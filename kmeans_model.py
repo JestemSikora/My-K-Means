@@ -9,13 +9,12 @@ class My_Kmeans:
         self.k = {}
         self.position = np.array([])
 
-    def random_location_pick(self, X, k):
-        ''' Zrobić z odchylenia takie punkty, aby pokazywały się w granicach X'''
-        mean_ = np.mean(X)
-        std_ = np.std(X)
 
-        self.position = np.random.normal(loc=mean_, scale=std_, size=(k, X.shape[1]))
-        self.position = np.round(self.position, 2)
+
+    def random_location_pick(self, X, k):
+        idx = np.random.choice(len(X), size=k, replace=False)
+        self.position = np.round(X[idx], 2)
+
 
 
     def mean_function(self, X, k, max_attempts=10):
@@ -34,7 +33,7 @@ class My_Kmeans:
                     restart_needed = True
                     break
 
-                total = sum(cluster_values)
+                total = np.sum(cluster_values, axis= 0)
                 self.position[i] = np.round(total / s_j, 2)
 
             if not restart_needed:
@@ -44,7 +43,8 @@ class My_Kmeans:
         if attempt == max_attempts:
             raise RuntimeError("Too many attempts to fix empty clusters")
 
-            
+
+
     def claster_function(self, X, k, Null_Claster, null_idx):
 
         if Null_Claster is True and null_idx is not None:
@@ -70,16 +70,14 @@ class My_Kmeans:
 
 
 
-
-
     def fit(self, X, k):
-        for i in range(101):
+        for i in range(21):
             if not self.position.any():
                 self.random_location_pick(X, k)
 
             self.claster_function(X, k, False, None)
             self.mean_function(X, k)
-            if i % 10 == 0:
+            if i % 2 == 0:
                 print(f'Clustering for {i}th iteration: {[f"{k}: {len(v)}" for k, v in self.k.items()]}')
                 print(f'New position after {i}th iteration: {self.position}')
                 print("---------------------------------------------")

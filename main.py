@@ -15,7 +15,7 @@ X, y = iris.data, iris.target
 
 
 model_1 = My_Kmeans()
-
+model_1.random_location_pick(X,3)
 model_1.fit(X, 3)
 
 
