@@ -19,8 +19,7 @@ This project presents a custom implementation of the K-Means algorithm in Python
 
 ## Installation
 ```bash
-pip install numpy pandas scikit-learn
-
+  pip install numpy pandas scikit-learn
 ```
 
 ## How It Works:
