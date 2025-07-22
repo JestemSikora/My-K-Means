@@ -1,43 +1,32 @@
-
 **K-Means Clustering - Iris Dataset**
 
-Ten projekt przedstawia od podstaw własną implementację algorytmu K-Means w Pythonie, wykorzystując klasyczny zbiór danych *Iris* z biblioteki `scikit-learn`.
+This project presents a custom implementation of the K-Means algorithm in Python, using the classic *Iris* dataset from the `scikit-learn` library.
 
-## Spis treści
-- [Wymagania](#wymagania)
-- [Instalacja](#instalacja)
-- [Uruchomienie](#uruchomienie)
-- [Struktura projektu](#struktura-projektu)
-- [Opis działania](#opis-działania)
-- [Przykład użycia](#przykład-użycia)
-- [Licencja](#licencja)
+## Table of Contents
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [How It Works](#how-it-works)
 
-## Wymagania
+## Requirements
 - Python 3.x
 - NumPy
 - Pandas
 - scikit-learn
 
-## Instalacja
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+## Installation
 ```bash
 pip install numpy pandas scikit-learn
+
 ```
 
-## Uruchomienie:
-1. Zainstaluj wymagane biblioteki:
-```bash
-   pip install numpy pandas scikit-learn
-```
-2. Uruchom plik main.py:
-```bash
-   python main.py
-```
-
-Opis działania:
-- Dane Iris są ładowane z sklearn.datasets.
-- Algorytm K Means dzieli dane na 3 klastry.
-- Wyniki klastrów są dostępne w atrybucie model_1.k.
-
+## How It Works:
+- The Iris dataset is loaded from sklearn.datasets.
+- The K-Means algorithm clusters the data into 3 groups.
+- The clustering results are available in the model_1.k attribute.
 
 
 
