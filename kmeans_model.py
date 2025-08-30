@@ -94,8 +94,9 @@ class My_Kmeans:
 
             if i % 5 == 0:
                 print(f'Clustering for {i}th iteration: {[f"{k}: {len(v)}" for k, v in self.k.items()]}')
-                print(f'New position after {i}th iteration: {self.position}')
+                print(f'New position of centroids after {i}th iteration: {self.position}')
                 print("---------------------------------------------")
+
 
 
 

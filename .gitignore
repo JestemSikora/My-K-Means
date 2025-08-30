@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Środowiska wirtualne
+venv/
+.venv/
+ML-DA-AI/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
