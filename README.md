@@ -1,32 +1,23 @@
-**K-Means Clustering - Iris Dataset**
+# KMeans Mini-Project
 
-This project presents a custom implementation of the K-Means algorithm in Python, using the classic *Iris* dataset from the `scikit-learn` library.
+This repository contains a **mini-project** focused on understanding and implementing the main concepts behind the **KMeans algorithm**.  
+The project is presented in Jupyter Notebooks with notes and simple example usage using libraries.
 
-## Table of Contents
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [How It Works](#how-it-works)
+---
 
-## Requirements
-- Python 3.x
-- NumPy
-- Pandas
-- scikit-learn
+## 📖 Overview
+    1. Notes for KMeans
+        A. Main idea
+        B. How it works
+        D. When to use it?
+    2. Implementation from scratch and using library
 
-  ```bash
-  pip install -r requirements.txt
-  ```
+---
 
-## Installation
+## ⚙️ Installation
+Clone the repository and install the dependencies:
+
 ```bash
-  pip install numpy pandas scikit-learn
-```
-
-## How It Works:
-- The Iris dataset is loaded from sklearn.datasets.
-- The K-Means algorithm clusters the data into 3 groups.
-- The clustering results are available in the model_1.k attribute.
-
-
-
-
+git clone https://github.com/your-username/My-XGBoost-Implementation.git
+cd My-XGBoost-Implementation
+pip install -r requirements.txt
